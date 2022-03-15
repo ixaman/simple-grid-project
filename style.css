@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #10121b;
+  color: #fff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+p,
+h1 {
+  text-transform: uppercase;
+}
+
+.main-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.lines {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.line_1,
+.line_2,
+.line_3,
+.line_4 {
+  width: 1px;
+  background-color: #fff;
+  opacity: 0.1;
+  min-height: 100%;
+}
+
+.content {
+  padding: 6rem 6rem;
+}
+
+.title-container {
+  position: relative;
+  width: 50%;
+}
+
+.title-container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.title-container p {
+  font-size: 4rem;
+  font-weight: 700;
+  opacity: 0.06;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.title-container::before {
+  content: "";
+  height: 0.4rem;
+  width: 40%;
+  background-color: rgba(30, 59, 114, 0.931);
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  border-radius: 0.4rem;
+}
+.title-container::after {
+  content: "";
+  height: 0.4rem;
+  width: 20%;
+  background-color: rgb(56, 110, 211);
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  border-radius: 0.4rem;
+}
+
+.blogs-container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.blogs-container a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  padding: 0.6rem 0;
+  display: inline-block;
+}
+.blogs-container a:hover {
+  color: rgb(29, 99, 212);
+}
+
+.blog .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog {
+  background-color: #191d2b;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.blog:hover {
+  transform: translateY(-5px);
+}
+
+.blog-content {
+  padding: 1rem;
+}
